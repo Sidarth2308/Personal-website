@@ -1,0 +1,52 @@
+.Resume-Container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+
+    font-family: "Poppins",Arial,sans-serif;
+    background: #fff;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #999;
+}
+
+.Resume-SideNav{
+    flex-direction: column;
+    position: sticky;
+    top : 100px;
+    margin-bottom: 100px;
+}
+.Resume-SideNav-Link{
+    color: #000;
+    cursor: pointer;
+    user-select: none;
+    transition: .3s all ease;
+    text-decoration: none;
+    background-color: transparent;
+    font-weight: 700;
+    list-style: none;
+    margin-bottom: 20px;
+    width:300px;
+}
+
+@media only screen and (min-width: 580px) {
+    .Resume-Container{
+        max-width: 580px;
+    }
+}
+@media only screen and (min-width: 770px) {
+    .Resume-Container{
+        max-width: 770px;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .Resume-Container{
+        max-width: 1000px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .Resume-Container{
+        max-width: 1200px;
+    }
+}

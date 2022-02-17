@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react'
+import { Flex } from '@chakra-ui/react'
+import { Hero, About, Resume } from './Sections'
+import { ChakraProvider } from '@chakra-ui/react'
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <ChakraProvider resetCSS={true}>
+            <Flex align="center" direction="column">
+                <Flex w="100%" align="center" direction="column">
+                    <Hero />
+                </Flex>
+                <Flex
+                    zIndex="1"
+                    w="100%"
+                    align="center"
+                    direction="column"
+                    bg="rgb(255, 255, 255)"
+                >
+                    <About />
+                </Flex>
+                <Flex
+                    zIndex="1"
+                    w="100%"
+                    align="center"
+                    direction="column"
+                    bg="rgb(255, 255, 255)"
+                >
+                    <Resume />
+                </Flex>
+                <Flex
+                    zIndex="1"
+                    w="100%"
+                    align="center"
+                    direction="column"
+                    bg="rgb(255, 255, 255)"
+                >
+                    <About />
+                </Flex>
+            </Flex>
+        </ChakraProvider>
+    )
 }
 
-export default App;
+export default App
