@@ -16,15 +16,73 @@
     align-items: center;
     width: 100%;
 }
-
-.Services-Container-Title{
+.Services-Cards{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.Services-Title{
     font-size: 50px;
     font-weight: 700;
     margin-bottom: 1.5rem!important;
     line-height: 1.5;
     color: #000;
 }
+.Service-Card-Container{
+    width : 450px;
+    height : 290px;
+    background-color: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    margin-bottom: 40px;
+    padding: 2em;
+    transition: 1s all ease;
 
+    flex-direction: column;
+    margin : 20px;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+.Service-Card-Container:hover{
+    background-color: #3e64ff;
+}
+
+
+.Service-Card-Icon{
+    height : 70px;
+    width : 70px;
+    filter: invert(29%) sepia(64%) saturate(2393%) hue-rotate(221deg) brightness(107%) contrast(108%);
+    transition: 1s all ease;
+    margin-bottom: 30px;
+}
+.Service-Card-Container:hover .Service-Card-Icon{
+    filter: invert(0%) sepia(6%) saturate(7500%) hue-rotate(360deg) brightness(99%) contrast(105%);
+}
+.Service-Card-Title{
+    line-height: 1.3;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    position: relative;
+    color: #000;
+    margin-bottom: 10px;
+}
+.Service-Card-Divider{
+    height : 2px;
+    width : 30px;
+    transition: 1s all ease;
+    border-bottom: 2px solid #3e64ff ;
+    margin-bottom: 30px;
+}
+.Service-Card-Container:hover .Service-Card-Divider{
+    border-bottom: 2px solid #000 ;
+}
+.Service-Card-Description{
+    color: rgba(0,0,0,.7);
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
 @media only screen and (min-width: 580px) {
     .Services-Container{
         max-width: 580px;

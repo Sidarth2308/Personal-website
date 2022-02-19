@@ -2,7 +2,7 @@ import { Flex } from '@chakra-ui/react'
 import React, { useEffect, useRef, useState } from 'react'
 import StickyBox from 'react-sticky-box'
 import './styles/styles.css'
-import { ResumeData } from '../../Resume-Data'
+import { ResumeData } from '../../Data'
 import { EducationCard, ExperienceCard, SkillCard } from './resume-cards'
 import useOnScreen from '../../Hooks/isOnScreen'
 export default function Resume() {

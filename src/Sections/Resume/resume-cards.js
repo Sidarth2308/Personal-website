@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Box, Flex } from '@chakra-ui/react'
 import PropTypes from 'prop-types'
+import CountUp from 'react-countup'
 import VisibilitySensor from 'react-visibility-sensor'
 export const EducationCard = ({ educationData }) => {
     const {
@@ -79,7 +80,7 @@ export const SkillCard = ({ skillData }) => {
                             className="Resume-Data-TitleScore"
                             right={showNow ? `${100 - score}%` : '95%'}
                         >
-                            {score}%
+                            <CountUp end={score} duration={2} />%
                         </Flex>
                     </Flex>
                     <Flex className="Resume-Card-Skill-Progress">

@@ -1,4 +1,4 @@
-export const ResumeData = {
+const ResumeData = {
     Education: [
         {
             id: 1,
@@ -165,3 +165,5 @@ export const ResumeData = {
         },
     ],
 }
+
+export default ResumeData
