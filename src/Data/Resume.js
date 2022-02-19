@@ -95,73 +95,75 @@ const ResumeData = {
         },
         {
             id: 2,
-            skill: 'MongoDB',
-            score: 70,
-        },
-        {
-            id: 3,
             skill: 'HTML5',
             score: 90,
         },
         {
-            id: 4,
+            id: 3,
             skill: 'CSS3',
             score: 90,
         },
         {
-            id: 5,
+            id: 4,
             skill: 'Javascript',
             score: 86,
         },
         {
-            id: 6,
-            skill: 'Typescript',
-            score: 80,
-        },
-        {
-            id: 7,
-            skill: 'C++',
-            score: 60,
-        },
-        {
-            id: 8,
-            skill: 'Java',
-            score: 65,
-        },
-        {
-            id: 9,
-            skill: 'Python',
-            score: 75,
-        },
-        {
-            id: 10,
+            id: 5,
             skill: 'Node.js',
             score: 85,
         },
         {
+            id: 6,
+            skill: 'AWS Cloud Solutions',
+            score: 85,
+        },
+        {
+            id: 7,
+            skill: 'Typescript',
+            score: 80,
+        },
+        {
+            id: 8,
+            skill: 'Python',
+            score: 75,
+        },
+        {
+            id: 9,
+            skill: 'SQL',
+            score: 75,
+        },
+        {
+            id: 10,
+            skill: 'MongoDB',
+            score: 70,
+        },
+        {
             id: 11,
+            skill: 'SEO',
+            score: 66,
+        },
+        {
+            id: 12,
+            skill: 'Java',
+            score: 65,
+        },
+
+        {
+            id: 13,
+            skill: 'C++',
+            score: 60,
+        },
+
+        {
+            id: 14,
             skill: 'C',
             score: 60,
         },
         {
-            id: 12,
-            skill: 'Machine Learning',
-            score: 55,
-        },
-        {
-            id: 13,
-            skill: 'SEO',
-            score: '66',
-        },
-        {
-            id: 14,
-            skill: 'SQL',
-            score: '75',
-        },
-        {
             id: 15,
-            skill: 'AWS',
-            score: '85',
+            skill: 'Machine Learning',
+            score: 60,
         },
     ],
 }
