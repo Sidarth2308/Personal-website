@@ -16,6 +16,6 @@ html {
 }
 
 *::selection {
-    color: red;
-    background: yellow;
+    color: white;
+    background: #3E64FF;
   }

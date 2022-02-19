@@ -1,13 +1,15 @@
 import { Flex, Image } from '@chakra-ui/react'
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './styles/styles.css'
 import AboutImage from '../../Assets/About2.jpeg'
 import CountUp from 'react-countup'
 import VisibilitySensor from 'react-visibility-sensor'
+import { ScrollContext } from '../../Context'
 export default function About() {
     const [showNow, setShowNow] = useState(false)
+    const { AboutRef } = useContext(ScrollContext)
     return (
-        <Flex className="About-Container">
+        <Flex className="About-Container" ref={AboutRef}>
             <Flex w="100%" alignItems="center">
                 <Flex flex="1" justifyContent="flex-end">
                     <Flex className="About-ImageContainer">

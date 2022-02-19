@@ -1,0 +1,94 @@
+.Projects-Container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+
+    font-family: "Poppins",Arial,sans-serif;
+    background: #fff;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #999;
+}
+.Projects-Title{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 1.5rem!important;
+    line-height: 1.5;
+    color: #000; 
+}
+.Projects-Cards{
+    width: 100%;
+    max-width: 800px;
+    flex-direction: column;
+}
+.Projects-Card-Container{
+   flex-direction: column;
+   align-items: center;
+   user-select: none;
+}
+.Projects-Card-Image{
+    width : 100%;
+    height : 400px;
+    
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.Projects-Card-Title{
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #000;
+    margin-top: 0;
+    position: relative;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom:20px;
+
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.Projects-Card-Button{
+    border: 1px solid #999!important;
+    background: #999!important;
+    color: #fff!important;
+    display : flex;
+    cursor: pointer;
+    align-items: center;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding : 0.5rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    justify-content: center;
+    transition: .3s all ease;
+    width: 150px;
+    border-radius: 10px;
+    user-select: none;
+}
+.Projects-Card-Button:hover{
+    color: #000!important;
+}
+@media only screen and (min-width: 580px) {
+    .Projects-Container{
+        max-width: 580px;
+    }
+}
+@media only screen and (min-width: 770px) {
+    .Projects-Container{
+        max-width: 770px;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .Projects-Container{
+        max-width: 1000px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .Projects-Container{
+        max-width: 1200px;
+    }
+}

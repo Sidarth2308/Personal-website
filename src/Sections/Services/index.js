@@ -1,8 +1,9 @@
 import { Flex } from '@chakra-ui/react'
-import React from 'react'
+import React, { useContext } from 'react'
 import PropTypes from 'prop-types'
 import { ServicesData } from '../../Data'
 import './styles/styles.css'
+import { ScrollContext } from '../../Context'
 const ServiceCard = ({ cardData }) => {
     const { service, description, icon } = cardData
     return (
@@ -16,11 +17,12 @@ const ServiceCard = ({ cardData }) => {
 }
 
 export default function Services() {
+    const { ServicesRef } = useContext(ScrollContext)
     return (
-        <Flex className="Services-Container">
+        <Flex className="Services-Container" ref={ServicesRef}>
             <Flex className="Services-Container-Secondary">
                 <Flex className="Services-Title">Services</Flex>
-                <Flex className="Services-Description">
+                <Flex className="Services-Description" mb="50px">
                     Far far away, behind the word mountains, far from the
                     countries Vokalia and Consonantia
                 </Flex>

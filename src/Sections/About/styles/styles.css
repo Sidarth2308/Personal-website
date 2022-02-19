@@ -13,6 +13,7 @@
 .About-ImageContainer{
     width : 555px;
     height : 685px;
+    user-select: none;
     border-radius: 10px;
 }
 .About-RightColumn{

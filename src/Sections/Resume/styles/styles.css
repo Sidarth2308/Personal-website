@@ -29,6 +29,7 @@
     list-style: none;
     margin-bottom: 20px;
     width:300px;
+    position:relative;
 }
 .Resume-Data{
     flex-direction: column;

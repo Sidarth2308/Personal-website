@@ -1,0 +1,86 @@
+.Freelance-Container{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    font-family: "Poppins",Arial,sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #999;
+    justify-content: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: 20% 70%;
+}
+
+.Freelance-Container-Overlay{
+    width: 100%;
+    height : 250px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    background: #3e64ff;
+    opacity: .7;
+}
+
+.Freelance-Container-Secondary{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 1;
+}
+.Freelance-Container-Title{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+.Freelance-Container-Button{
+    border: 1px solid #3e64ff!important;
+    background: #3e64ff!important;
+    color: #fff!important;
+    display : flex;
+    cursor: pointer;
+    align-items: center;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding : 0.5rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    justify-content: center;
+    transition: .3s all ease;
+    width: 150px;
+    border-radius: 10px;
+    user-select: none;
+}
+.Freelance-Container-Button:hover{
+    color: #000!important;
+}
+@media only screen and (min-width: 580px) {
+    .Freelance-Container-Secondary{
+        max-width: 580px;
+    }
+}
+@media only screen and (min-width: 770px) {
+    .Freelance-Container-Secondary{
+        max-width: 770px;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .Freelance-Container-Secondary{
+        max-width: 1000px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .Freelance-Container-Secondary{
+        max-width: 1200px;
+    }
+}

@@ -1,10 +1,11 @@
 import { Flex } from '@chakra-ui/react'
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useContext, useEffect, useRef, useState } from 'react'
 import StickyBox from 'react-sticky-box'
 import './styles/styles.css'
 import { ResumeData } from '../../Data'
 import { EducationCard, ExperienceCard, SkillCard } from './resume-cards'
 import useOnScreen from '../../Hooks/isOnScreen'
+import { ScrollContext } from '../../Context'
 export default function Resume() {
     const [currentVisible, setCurrentVisible] = useState('')
     const ref1 = useRef()
@@ -14,6 +15,7 @@ export default function Resume() {
     const isVisible2 = useOnScreen(ref2)
     const isVisible3 = useOnScreen(ref3)
 
+    const { ResumeRef } = useContext(ScrollContext)
     useEffect(() => {
         if (isVisible3) {
             setCurrentVisible('skills')
@@ -24,7 +26,7 @@ export default function Resume() {
         }
     }, [isVisible1, isVisible2, isVisible3])
     return (
-        <Flex className="Resume-Container">
+        <Flex className="Resume-Container" ref={ResumeRef}>
             <Flex w="100%" mt="80px">
                 <StickyBox offsetTop={10} offsetBottom={10}>
                     <Flex className="Resume-SideNav">
@@ -35,6 +37,7 @@ export default function Resume() {
                                     ? '#3e64ff'
                                     : '#000'
                             }
+                            left={currentVisible === 'education' ? '30px' : '0'}
                             onClick={() => {
                                 ref1.current.scrollIntoView()
                                 setCurrentVisible('education')
@@ -44,6 +47,9 @@ export default function Resume() {
                         </Flex>
                         <Flex
                             className="Resume-SideNav-Link"
+                            left={
+                                currentVisible === 'experience' ? '30px' : '0'
+                            }
                             color={
                                 currentVisible === 'experience'
                                     ? '#3e64ff'
@@ -58,6 +64,7 @@ export default function Resume() {
                         </Flex>
                         <Flex
                             className="Resume-SideNav-Link"
+                            left={currentVisible === 'skills' ? '30px' : '0'}
                             color={
                                 currentVisible === 'skills' ? '#3e64ff' : '#000'
                             }

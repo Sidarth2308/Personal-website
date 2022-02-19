@@ -81,8 +81,7 @@ const ResumeData = {
             role: 'Full-Stack Engineer',
             company: 'Taxvisor',
             oneLiner:
-                'An upcoming startup which provides medical analysis and other related services to hospitals and doctors',
-            website: '',
+                'An upcoming Legal Tech Startup based from Mumbai, India.',
             description:
                 'Implemented solutions based on MERN stack, Websockets, as well as creating production grade monetized apis for paid and external uses',
         },
