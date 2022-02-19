@@ -10,3 +10,12 @@ body {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+*::selection {
+    color: red;
+    background: yellow;
+  }

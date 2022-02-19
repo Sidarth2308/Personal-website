@@ -5,7 +5,7 @@ import AboutImage from '../../Assets/About2.jpeg'
 import CountUp from 'react-countup'
 import VisibilitySensor from 'react-visibility-sensor'
 export default function About() {
-    const [hasShown, setHasShown] = useState(false)
+    const [showNow, setShowNow] = useState(false)
     return (
         <Flex className="About-Container">
             <Flex w="100%" alignItems="center">
@@ -77,24 +77,20 @@ export default function About() {
                             <Flex>
                                 <VisibilitySensor
                                     partialVisibility
-                                    offset={{ bottom: 200 }}
+                                    onChange={(isVisible) => {
+                                        if (isVisible) {
+                                            setShowNow(true)
+                                        }
+                                    }}
                                 >
-                                    {({ isVisible }) => (
-                                        <Flex className="About-RightColumn-Projects-CountUp">
-                                            {isVisible && !hasShown ? (
-                                                <CountUp
-                                                    end={20}
-                                                    duration={2}
-                                                    onEnd={() => {
-                                                        setHasShown(true)
-                                                    }}
-                                                />
-                                            ) : (
-                                                20
-                                            )}
-                                            +
-                                        </Flex>
-                                    )}
+                                    <Flex className="About-RightColumn-Projects-CountUp">
+                                        {showNow ? (
+                                            <CountUp end={20} duration={2} />
+                                        ) : (
+                                            20
+                                        )}
+                                        +
+                                    </Flex>
                                 </VisibilitySensor>
 
                                 <Flex className="About-RightColumn-Projects-Title">
