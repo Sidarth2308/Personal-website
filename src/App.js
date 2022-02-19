@@ -1,6 +1,6 @@
 import React from 'react'
 import { Flex } from '@chakra-ui/react'
-import { Hero, About, Resume, Services } from './Sections'
+import { Hero, About, Resume, Services, Footer } from './Sections'
 import { ChakraProvider } from '@chakra-ui/react'
 function App() {
     return (
@@ -38,6 +38,15 @@ function App() {
                     pt="150px"
                 >
                     <Services />
+                </Flex>
+                <Flex
+                    zIndex="1"
+                    w="100%"
+                    align="center"
+                    direction="column"
+                    bg="#000000"
+                >
+                    <Footer />
                 </Flex>
             </Flex>
         </ChakraProvider>
