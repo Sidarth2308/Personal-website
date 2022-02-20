@@ -1,4 +1,4 @@
-import { Flex, useToast } from '@chakra-ui/react'
+import { Flex, Spinner, useToast } from '@chakra-ui/react'
 import React, { useContext, useEffect, useState } from 'react'
 import './styles/styles.css'
 import { Input, Textarea } from '@chakra-ui/react'
@@ -14,6 +14,7 @@ export default function Contact() {
         subject: '',
         message: '',
     })
+    const [isLoading, setIsLoading] = useState(false)
     const [isDisabled, setIsDisabled] = useState(true)
     useEffect(() => {
         if (
@@ -33,6 +34,7 @@ export default function Contact() {
         })
     }
     const handleSubmission = () => {
+        setIsLoading(true)
         const url = 'https://personal-website-backend-sid.herokuapp.com/'
         axios
             .post(url, formData)
@@ -63,9 +65,11 @@ export default function Contact() {
                         position: 'top',
                     })
                 }
+                setIsLoading(false)
             })
             .catch((error) => {
                 console.log(error)
+                setIsLoading(false)
             })
     }
     return (
@@ -135,7 +139,7 @@ export default function Contact() {
                         className="Contact-Button"
                         bg={isDisabled ? '#999' : 'rgb(62, 100, 255)'}
                         onClick={() => {
-                            if (!isDisabled) {
+                            if (!isDisabled && !isLoading) {
                                 handleSubmission()
                             } else {
                                 toast({
@@ -150,7 +154,8 @@ export default function Contact() {
                             }
                         }}
                     >
-                        Send Message
+                        {isLoading ? <Spinner /> : <div>Send Message</div>}
+                        {console.log(isLoading)}
                     </Flex>
                 </Flex>
             </Flex>
