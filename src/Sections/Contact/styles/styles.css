@@ -1,0 +1,90 @@
+.Contact-Container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+
+    font-family: "Poppins",Arial,sans-serif;
+    background: #fff;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #999;
+}
+.Contact-Button{
+    color: #fff!important;
+    display : flex;
+    cursor: pointer;
+    align-items: center;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding : 0.5rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    justify-content: center;
+    transition: .3s all ease;
+    width: 150px;
+    border-radius: 10px;
+    user-select: none;
+}
+.Contact-Title{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 1.5rem!important;
+    line-height: 1.5;
+    color: #000; 
+}
+.Contact-Form{
+    flex-direction: column;
+    width :100%;
+    max-width: 800px;
+    background-color: #F8F9FA;
+    padding : 30px;
+    border-radius: 10px;
+    padding-bottom: 50px;
+    align-items: center;
+}
+
+@media only screen and (min-width: 580px) {
+    .Contact-Container{
+        max-width: 580px;
+    }
+}
+@media only screen and (min-width: 770px) {
+    .Contact-Container{
+        max-width: 770px;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .Contact-Container{
+        max-width: 1000px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .Contact-Container{
+        max-width: 1200px;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .Contact-Form{
+        max-width: 700px;
+    }
+}
+
+
+
+@media only screen and (max-width: 770px) {
+    .Contact-Title{
+        font-size: 38px;
+    }
+}
+
+
+
+@media only screen and (max-width: 550px) {
+    .Contact-Container-Secondary{
+        margin : 0 15px;
+    }
+}

@@ -1,34 +1,36 @@
-import { Flex, Image } from '@chakra-ui/react'
+import { Flex } from '@chakra-ui/react'
 import React, { useContext, useState } from 'react'
 import './styles/styles.css'
 import AboutImage from '../../Assets/About2.jpeg'
 import CountUp from 'react-countup'
 import VisibilitySensor from 'react-visibility-sensor'
 import { ScrollContext } from '../../Context'
+import { useMediaQuery } from 'react-responsive'
 export default function About() {
+    const is770 = useMediaQuery({ query: '(max-width: 770px)' })
     const [showNow, setShowNow] = useState(false)
     const { AboutRef } = useContext(ScrollContext)
     return (
         <Flex className="About-Container" ref={AboutRef}>
             <Flex w="100%" alignItems="center">
-                <Flex flex="1" justifyContent="flex-end">
-                    <Flex className="About-ImageContainer">
-                        <Image
-                            maxH="100%"
-                            maxW="100%"
-                            src={AboutImage}
-                            alt="Sidarth Jaitly"
-                        />
+                {!is770 && (
+                    <Flex className="About-LeftColumn-Container">
+                        <Flex
+                            className="About-Image"
+                            bgImage={AboutImage}
+                        ></Flex>
                     </Flex>
-                </Flex>
-                <Flex flex="1">
+                )}
+                <Flex className="About-RightColumn-Container">
                     <Flex className="About-RightColumn">
                         <Flex className="About-RightColumn-Heading">
                             About Me
                         </Flex>
                         <Flex className="About-RightColumn-Description">
-                            A small river named Duden flows by their place and
-                            supplies it with the necessary regelialia.
+                            I hail from the state capital city of Lucknow where
+                            I developed a keen sense of problem solving while
+                            munching on delicacies of the old city. Currently
+                            based out of Chennai, India.
                         </Flex>
                         <Flex className="About-RightColumn-Details">
                             <Flex className="About-RightColumn-Details-Item">

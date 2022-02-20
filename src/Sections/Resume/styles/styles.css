@@ -125,6 +125,10 @@
 }
 .Resume-Skills-Container{
     flex-direction: column;
+     
+}
+.Resume-Container-Secondary{
+    margin-top: 80px;
 }
 @media only screen and (min-width: 580px) {
     .Resume-Container{
@@ -144,5 +148,26 @@
 @media only screen and (min-width: 1200px) {
     .Resume-Container{
         max-width: 1200px;
+    }
+}
+
+
+@media only screen and (max-width: 770px) {
+    .Resume-Container-Secondary{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .Resume-SideNav{
+        position: static;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 550px) {
+    .Resume-Container-Secondary{
+        margin: 0  15px;
     }
 }

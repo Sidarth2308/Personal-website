@@ -12,13 +12,14 @@ import {
 } from './Sections'
 import { ChakraProvider } from '@chakra-ui/react'
 import { ScrollContext } from './Context'
+import TopNav from './Components/TopNav'
 function App() {
     const HeroRef = useRef(null)
     const AboutRef = useRef(null)
     const ResumeRef = useRef(null)
     const ServicesRef = useRef(null)
     const ProjectsRef = useRef(null)
-    const ContactsRef = useRef(null)
+    const ContactRef = useRef(null)
 
     return (
         <ChakraProvider resetCSS={true}>
@@ -29,10 +30,12 @@ function App() {
                     ResumeRef,
                     ServicesRef,
                     ProjectsRef,
-                    ContactsRef,
+                    ContactRef,
                 }}
             >
                 <Flex align="center" direction="column">
+                    <TopNav />
+
                     <Flex w="100%" align="center" direction="column">
                         <Hero />
                     </Flex>
@@ -73,6 +76,7 @@ function App() {
                         direction="column"
                         bg="rgb(255, 255, 255)"
                         pt="150px"
+                        pb="50px"
                     >
                         <Projects />
                     </Flex>
@@ -92,6 +96,7 @@ function App() {
                         direction="column"
                         bg="rgb(255, 255, 255)"
                         pt="150px"
+                        pb="50px"
                     >
                         <Contact />
                     </Flex>

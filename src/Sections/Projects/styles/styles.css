@@ -33,7 +33,7 @@
     
     background-repeat:no-repeat;
     background-size:cover;
-    background-position:center;
+    background-position:center center;
 }
 .Projects-Card-Title{
     font-size: 24px;
@@ -65,7 +65,7 @@
     font-weight: 600;
     justify-content: center;
     transition: .3s all ease;
-    width: 150px;
+    min-width: 150px;
     border-radius: 10px;
     user-select: none;
 }
@@ -76,6 +76,7 @@
     .Projects-Container{
         max-width: 580px;
     }
+    
 }
 @media only screen and (min-width: 770px) {
     .Projects-Container{
@@ -92,3 +93,45 @@
         max-width: 1200px;
     }
 }
+@media only screen and (max-width: 1000px) {
+    .Projects-Cards{
+        max-width: 700px;
+    }
+}
+
+
+@media only screen and (max-width: 770px) {
+    .Projects-Cards{
+        max-width: 500px;
+    }
+    .Projects-Card-Image{
+        height : 200px;
+        
+    }
+    .Projects-Title{
+        font-size: 38px;
+        
+    }
+}
+
+
+
+@media only screen and (max-width: 550px) {
+    .Projects-Container-Secondary{
+        margin : 15px;
+    }
+    .Projects-Cards{
+        max-width: 300px;
+    }
+    .Projects-Card-Title{
+        font-size: 12px;
+    }
+    .Projects-Card-Button{
+        min-width: 50px;
+        font-size: 8px;
+    }
+}
+
+ 
+
+ 

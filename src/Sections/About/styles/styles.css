@@ -10,11 +10,12 @@
     font-weight: 400;
     color: #999;
 }
-.About-ImageContainer{
+.About-Image{
     width : 555px;
     height : 685px;
-    user-select: none;
-    border-radius: 10px;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
 }
 .About-RightColumn{
      margin : 3rem 20px 3rem 3rem;
@@ -95,6 +96,14 @@
 .About-RightColumn-Projects-Download:hover{
     color: #000!important;
 }
+.About-LeftColumn-Container{
+    justify-content: flex-end;
+    flex: 1;
+}
+.About-RightColumn-Container{
+    flex:1;
+    width : 100%;
+}
 @media only screen and (min-width: 580px) {
     .About-Container{
         max-width: 580px;
@@ -114,4 +123,29 @@
     .About-Container{
         max-width: 1200px;
     }
+}
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    .About-Image{
+        max-width: 380px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .About-RightColumn-Heading{
+        font-size: 38px;
+        
+    }
+}
+@media only screen and (max-width: 580px) {
+    .About-Container{
+        width: 100%;
+    }
+    .About-RightColumn{
+        margin :0 15px;
+        flex-direction: column;
+   }
 }

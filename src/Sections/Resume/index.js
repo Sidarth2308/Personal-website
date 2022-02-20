@@ -6,6 +6,7 @@ import { ResumeData } from '../../Data'
 import { EducationCard, ExperienceCard, SkillCard } from './resume-cards'
 import useOnScreen from '../../Hooks/isOnScreen'
 import { ScrollContext } from '../../Context'
+import { useMediaQuery } from 'react-responsive'
 export default function Resume() {
     const [currentVisible, setCurrentVisible] = useState('')
     const ref1 = useRef()
@@ -25,58 +26,74 @@ export default function Resume() {
             setCurrentVisible('education')
         }
     }, [isVisible1, isVisible2, isVisible3])
+
+    const is770 = useMediaQuery({ query: '(max-width: 770px)' })
+
     return (
         <Flex className="Resume-Container" ref={ResumeRef}>
-            <Flex w="100%" mt="80px">
-                <StickyBox offsetTop={10} offsetBottom={10}>
-                    <Flex className="Resume-SideNav">
-                        <Flex
-                            className="Resume-SideNav-Link"
-                            color={
-                                currentVisible === 'education'
-                                    ? '#3e64ff'
-                                    : '#000'
-                            }
-                            left={currentVisible === 'education' ? '30px' : '0'}
-                            onClick={() => {
-                                ref1.current.scrollIntoView()
-                                setCurrentVisible('education')
-                            }}
-                        >
-                            Education
+            <Flex w="100%" className="Resume-Container-Secondary">
+                {!is770 && (
+                    <StickyBox offsetTop={10} offsetBottom={10}>
+                        <Flex className="Resume-SideNav">
+                            <Flex
+                                className="Resume-SideNav-Link"
+                                color={
+                                    currentVisible === 'education'
+                                        ? '#3e64ff'
+                                        : '#000'
+                                }
+                                left={
+                                    currentVisible === 'education'
+                                        ? '30px'
+                                        : '0'
+                                }
+                                onClick={() => {
+                                    ref1.current.scrollIntoView()
+                                    setCurrentVisible('education')
+                                }}
+                            >
+                                Education
+                            </Flex>
+                            <Flex
+                                className="Resume-SideNav-Link"
+                                left={
+                                    currentVisible === 'experience'
+                                        ? '30px'
+                                        : '0'
+                                }
+                                color={
+                                    currentVisible === 'experience'
+                                        ? '#3e64ff'
+                                        : '#000'
+                                }
+                                onClick={() => {
+                                    setCurrentVisible('experience')
+                                    ref2.current.scrollIntoView()
+                                }}
+                            >
+                                Experience
+                            </Flex>
+                            <Flex
+                                className="Resume-SideNav-Link"
+                                left={
+                                    currentVisible === 'skills' ? '30px' : '0'
+                                }
+                                color={
+                                    currentVisible === 'skills'
+                                        ? '#3e64ff'
+                                        : '#000'
+                                }
+                                onClick={() => {
+                                    setCurrentVisible('skills')
+                                    ref3.current.scrollIntoView()
+                                }}
+                            >
+                                Skills
+                            </Flex>
                         </Flex>
-                        <Flex
-                            className="Resume-SideNav-Link"
-                            left={
-                                currentVisible === 'experience' ? '30px' : '0'
-                            }
-                            color={
-                                currentVisible === 'experience'
-                                    ? '#3e64ff'
-                                    : '#000'
-                            }
-                            onClick={() => {
-                                setCurrentVisible('experience')
-                                ref2.current.scrollIntoView()
-                            }}
-                        >
-                            Experience
-                        </Flex>
-                        <Flex
-                            className="Resume-SideNav-Link"
-                            left={currentVisible === 'skills' ? '30px' : '0'}
-                            color={
-                                currentVisible === 'skills' ? '#3e64ff' : '#000'
-                            }
-                            onClick={() => {
-                                setCurrentVisible('skills')
-                                ref3.current.scrollIntoView()
-                            }}
-                        >
-                            Skills
-                        </Flex>
-                    </Flex>
-                </StickyBox>
+                    </StickyBox>
+                )}
+
                 <Flex w="100%">
                     <Flex className="Resume-Data">
                         <div ref={ref1}>

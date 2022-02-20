@@ -33,8 +33,9 @@ const ResumeData = {
             board: '',
             maxScore: 10.0,
             gradedIn: 'CGPA',
-            course: 'B.Tech with specialization in Cloud Computing',
-            description: 'Currently ongoing.',
+            course: 'B.Tech ',
+            description:
+                'Specialization in Cloud Computing. Currently ongoing.',
         },
     ],
     Experience: [

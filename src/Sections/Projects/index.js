@@ -8,17 +8,7 @@ import { ProjectsData } from '../../Data'
 
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-
-const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    autoplaySpeed: 5000,
-    slidesToShow: 1,
-    autoplay: true,
-    swipeToSlide: true,
-    cssEase: 'ease-in-out',
-}
+import { useMediaQuery } from 'react-responsive'
 
 const ProjectsCard = ({ projectData }) => {
     const { thumbnail, title } = projectData
@@ -35,14 +25,32 @@ const ProjectsCard = ({ projectData }) => {
 
 export default function Projects() {
     const { ProjectsRef } = useContext(ScrollContext)
-
+    const is550 = useMediaQuery({ query: '(max-width: 550px)' })
+    const settings = {
+        dots: !is550,
+        lazyLoad: true,
+        infinite: true,
+        speed: 500,
+        autoplaySpeed: 5000,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        arrows: false,
+        autoplay: true,
+        swipeToSlide: true,
+        cssEase: 'ease-in-out',
+    }
     return (
         <Flex className="Projects-Container" ref={ProjectsRef}>
-            <Flex w="100%" direction="column" align="center">
+            <Flex
+                w="100%"
+                direction="column"
+                align="center"
+                className="Projects-Container-Secondary"
+            >
                 <Flex className="Projects-Title">Our Projects</Flex>
                 <Flex className="Services-Description" mb="30px">
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia
+                    Previous projects, freelance work as well as personal
+                    projects completed by me
                 </Flex>
                 <Flex className="Projects-Cards">
                     <Slider {...settings}>

@@ -22,7 +22,7 @@ const ServicesData = [
         id: 3,
         service: 'Back-end Engineer',
         description:
-            'Development of production grade back-end apis as well as front-end connection with node.js and Express framework. Website Support + Testing.',
+            'Development of production grade scalable back-end apis with node.js and Express framework. Website Support + Testing.',
         icon: BackEndIcon,
     },
     {

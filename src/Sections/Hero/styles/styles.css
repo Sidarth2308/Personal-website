@@ -17,6 +17,12 @@
     width: 50%;
     background: rgb(62, 100, 255);
 }
+.Hero-TopNavSmall{
+    width : 100%;
+}
+.Hero-TopNav-Hamburger{
+    width : 30px;
+}
 .Hero-TopNav{
     width: 100%;
     justify-content: space-between;
@@ -297,5 +303,12 @@
 @media only screen and (min-width: 1200px) {
     .Hero-Container{
         max-width: 1200px;
+    }
+}
+
+
+@media only screen and (max-width: 770px) {
+    .Hero-CenterShow-Main{
+        font-size: 40px;
     }
 }

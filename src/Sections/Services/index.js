@@ -23,8 +23,8 @@ export default function Services() {
             <Flex className="Services-Container-Secondary">
                 <Flex className="Services-Title">Services</Flex>
                 <Flex className="Services-Description" mb="50px">
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia
+                    I offer nothing less than excellence with high level support
+                    which has been established firmly by our previous partners.
                 </Flex>
                 <Flex className="Services-Cards">
                     {ServicesData.map((serviceData) => {
