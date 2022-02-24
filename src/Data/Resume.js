@@ -49,7 +49,7 @@ const ResumeData = {
                 'A SASS provider for salons and other establishments as well as providing a B2B marketplace for salon products.',
             website: 'https://glamplus.in',
             description:
-                'Spearheaded overhaul and redesign of the website, developed working apis for use by front-end and improved ux and ui of existing as well as implemented in-demand features.',
+                'Spearheaded overhaul and redesign of the website, developed working APIs for use by front-end and improved ux and ui of existing as well as implemented in-demand features.',
         },
         {
             id: 2,
@@ -84,7 +84,7 @@ const ResumeData = {
             oneLiner:
                 'An upcoming Legal Tech Startup based from Mumbai, India.',
             description:
-                'Implemented solutions based on MERN stack, Websockets, as well as creating production grade monetized apis for paid and external uses',
+                'Implemented solutions based on MERN stack, Websockets, as well as creating production grade monetized APIs for paid and external uses',
         },
     ],
     Skills: [
