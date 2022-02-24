@@ -42,7 +42,7 @@ const ResumeData = {
         {
             id: 1,
             monthStart: 'July, 2021',
-            monthEnd: 'December - 2021',
+            monthEnd: 'December, 2021',
             role: 'Front-end Engineer',
             company: 'Glamplus',
             oneLiner:
@@ -54,7 +54,7 @@ const ResumeData = {
         {
             id: 2,
             monthStart: 'May, 2021',
-            monthEnd: 'June - 2021',
+            monthEnd: 'June, 2021',
             role: 'Front-end Engineer',
             company: 'Science2Innovation',
             oneLiner:
@@ -66,7 +66,7 @@ const ResumeData = {
         {
             id: 3,
             monthStart: 'October, 2020',
-            monthEnd: 'December - 2020',
+            monthEnd: 'December, 2020',
             role: 'Full-Stack Engineer',
             company: 'Quadcure Analytics',
             oneLiner:
@@ -78,7 +78,7 @@ const ResumeData = {
         {
             id: 4,
             monthStart: 'May, 2020',
-            monthEnd: 'July - 2020',
+            monthEnd: 'July, 2020',
             role: 'Full-Stack Engineer',
             company: 'Taxvisor',
             oneLiner:
