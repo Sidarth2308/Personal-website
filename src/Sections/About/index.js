@@ -65,7 +65,7 @@ export default function About() {
                                     Email:
                                 </Flex>
                                 <Flex className="About-RightColumn-Details-Item-Right">
-                                    sj4917@srmist.edu.in
+                                    sidarthjaitly@gmail.com
                                 </Flex>
                             </Flex>
                             <Flex className="About-RightColumn-Details-Item">

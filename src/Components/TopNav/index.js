@@ -15,7 +15,6 @@ import HamburgerIcon from '../../Assets/hamburger.svg'
 import { useMediaQuery } from 'react-responsive'
 export default function TopNav() {
     const is1000 = useMediaQuery({ query: '(max-width: 1000px)' })
-    console.log(is1000)
     const [menuOpen, setMenuOpen] = useState(false)
     const [isVisible, setIsVisible] = useState(false)
     const [isAtTop, setIsAtTop] = useState(true)

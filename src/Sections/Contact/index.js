@@ -2,7 +2,7 @@ import { Flex, Spinner, useToast } from '@chakra-ui/react'
 import React, { useContext, useEffect, useState } from 'react'
 import './styles/styles.css'
 import { Input, Textarea } from '@chakra-ui/react'
-import axios from 'axios'
+import emailjs from '@emailjs/browser'
 import { ScrollContext } from '../../Context'
 
 export default function Contact() {
@@ -35,11 +35,17 @@ export default function Contact() {
     }
     const handleSubmission = () => {
         setIsLoading(true)
-        const url = 'https://sidarth-jaitly-backend.onrender.com/'
-        axios
-            .post(url, formData)
+        emailjs.init('MHuSan2GLsIrAYjqT')
+        emailjs
+            .send('service_mpiz9o5', 'template_434u1o1', {
+                sender_name: formData.name,
+                sender_email: formData.email,
+                sender_subject: formData.subject,
+                message: formData.message,
+            })
             .then((response) => {
-                if (response.data.status === 'S') {
+                console.log(response.status, response.text)
+                if (response.status == 200) {
                     toast({
                         title: 'Message sent successfully',
                         description: 'We will get back to you shortly.',
@@ -65,10 +71,20 @@ export default function Contact() {
                         position: 'top',
                     })
                 }
+
                 setIsLoading(false)
             })
             .catch((error) => {
                 console.log(error)
+                toast({
+                    title: 'Error occurred',
+                    description:
+                        'We could not process your request, please try again later.',
+                    status: 'error',
+                    duration: 5000,
+                    isClosable: true,
+                    position: 'top',
+                })
                 setIsLoading(false)
             })
     }
@@ -83,8 +99,8 @@ export default function Contact() {
                 <Flex className="Contact-Title">Contact Me</Flex>
                 <Flex className="Services-Description" mb="30px">
                     Contact me via this form or drop an email to
-                    sj4917@srmist.edu.in and I will get back to you within 24-48
-                    hours
+                    sidarthjaitly@gmail.com and I will get back to you within
+                    24-48 hours
                 </Flex>
                 <Flex className="Contact-Form">
                     <Input
@@ -95,7 +111,7 @@ export default function Contact() {
                         required
                         placeholder="Your Name"
                         mb="20px"
-                        color="#000"
+                        color="black"
                         bgColor="white"
                     />
                     <Input
@@ -155,7 +171,6 @@ export default function Contact() {
                         }}
                     >
                         {isLoading ? <Spinner /> : <div>Send Message</div>}
-                        {console.log(isLoading)}
                     </Flex>
                 </Flex>
             </Flex>
