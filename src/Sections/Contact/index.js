@@ -35,7 +35,7 @@ export default function Contact() {
     }
     const handleSubmission = () => {
         setIsLoading(true)
-        const url = 'https://personal-website-backend-sid.herokuapp.com/'
+        const url = 'https://sidarth-jaitly-backend.onrender.com/'
         axios
             .post(url, formData)
             .then((response) => {
