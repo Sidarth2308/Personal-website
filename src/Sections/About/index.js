@@ -1,7 +1,7 @@
 import { Flex } from '@chakra-ui/react'
 import React, { useContext, useState } from 'react'
 import './styles/styles.css'
-import AboutImage from '../../Assets/About2.jpeg'
+import AboutImage from '../../Assets/About3.jpg'
 import CountUp from 'react-countup'
 import VisibilitySensor from 'react-visibility-sensor'
 import { ScrollContext } from '../../Context'
@@ -56,7 +56,7 @@ export default function About() {
                                     Based out of:
                                 </Flex>
                                 <Flex className="About-RightColumn-Details-Item-Right">
-                                    Lucknow, Uttar Pradesh, India
+                                    Chennai, Tamil Nadu, India
                                 </Flex>
                             </Flex>
 

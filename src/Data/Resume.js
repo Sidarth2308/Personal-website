@@ -179,11 +179,6 @@ const ResumeData = {
         },
         {
             id: 14,
-            skill: 'Java',
-            score: 65,
-        },
-        {
-            id: 15,
             skill: 'C++',
             score: 60,
         },
