@@ -104,7 +104,7 @@ export default function About() {
                             <a
                                 className="About-RightColumn-Projects-Download"
                                 download
-                                href="https://drive.google.com/u/0/uc?id=11oiNekLwgNr_PTj2PidHrWJQejRcDlwu&export=download"
+                                href="https://drive.usercontent.google.com/download?id=1CSYoFaVGsPpu7ArVBzyHnncQhR-cPRnS&export=download"
                             >
                                 Download CV
                             </a>
