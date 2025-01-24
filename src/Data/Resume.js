@@ -43,13 +43,13 @@ const ResumeData = {
             id: 1,
             monthStart: 'February, 2023',
             monthEnd: 'July, 2023',
-            role: 'Associate Software Engineer',
+            role: 'Software Engineer',
             company: 'Fidelity Investments',
             oneLiner:
                 'Fidelity Investments is a Multinational financial services company known for managing assets, providing investment solutions, and serving millions of clients worldwide.',
             website: 'https://fidelity.com',
             description:
-                'Ownership and development of a key product in the company, Led development in key areas and business satisfaction, Leveraged AWS and cloud in increasing application performance and cost reduction, Understood details about financial and investment sector',
+                '• Designed and implemented robust web applications using Spring Boot and Angular, delivering high-performance solutions tailored for client needs.• Developed and maintained RESTful APIs, enabling seamless integration with third-party services and internal systems, reducing integration downtime.• Led a massive upgrade of Spring Boot and Angular involving changes to over 150 files across enterprise applications. This upgrade improved application performance by up to 20%, enhanced developer productivity by 25% , reduced security vulnerabilities by 30%, and ensured long-term maintainability and compatibility with modern frameworks.• Leveraged AWS cloud technologies to optimize application performance and reduce infrastructure costs through strategic use of services like EC2, RDS, and S3.• Collaborated effectively with business stakeholders to understand and refine requirements, ensuring alignment with project objectives.• Gained in-depth understanding of the financial and investment sectors, ensuring project requirements aligned with industry standards and regulations.',
         },
         {
             id: 2,
@@ -61,10 +61,21 @@ const ResumeData = {
                 'Fidelity Investments is a Multinational financial services company known for managing assets, providing investment solutions, and serving millions of clients worldwide.',
             website: 'https://fidelity.com',
             description:
-                'Worked on Angular and Java to create proof of concept project on automation and reduction of manual work, Practiced Agile practices and used JIRA to track progress, Concluded with E2E Testing and provided 90% code coverage',
+                '• Developed a proof-of-concept project using Angular and Java, automating workflows to reduce manual tasks and enhance operational efficiency.• Conducted comprehensive end-to-end testing, achieving 90%+ code coverage, which improved software quality and reliability.',
         },
         {
             id: 3,
+            monthStart: 'July, 2022',
+            monthEnd: 'January, 2023',
+            role: 'Web developer Intern',
+            company: 'Daphnis Labs',
+            oneLiner:
+                'Daphnis Labs, a New Delhi-based app and game development studio since 2013, delivers innovative software solutions globally, with expertise in AI, web, app development, and a proven track record with brands like Daikin and MTV.',
+            description:
+                '• Led the backend team to successfully deliver project milestones on time, ensuring alignment with overall product goals and quality standards.• Spearheaded the front-end team in implementing new designs, incorporating modern UI principles to enhance user experience.• Introduced libraries such as Material-UI and Chakra-UI, reducing development time by streamlining component design and implementation.',
+        },
+        {
+            id: 4,
             monthStart: 'July, 2021',
             monthEnd: 'December, 2021',
             role: 'Front-end Engineer',
@@ -73,19 +84,7 @@ const ResumeData = {
                 'A SASS provider for salons and other establishments as well as providing a B2B marketplace for salon products.',
             website: 'https://glamplus.in',
             description:
-                'Spearheaded overhaul and redesign of the website, developed working APIs for use by front-end and improved ux and ui of existing as well as implemented in-demand features.',
-        },
-        {
-            id: 4,
-            monthStart: 'May, 2021',
-            monthEnd: 'June, 2021',
-            role: 'Front-end Engineer',
-            company: 'Science2Innovation',
-            oneLiner:
-                'An Established Startup that focuses on connecting students directly with employers',
-            website: '',
-            description:
-                'Built Multi page form system with smart contract integration and pristine designing, redesigned entire Front-end architecture.',
+                '• Developed and maintained responsive web applications using the ReactJS framework, delivering seamless and user-friendly interfaces.• Assisted in mobile platform development and contributed to building cross-platform mobile applications using the React Native framework, ensuring consistent performance across devices.',
         },
         {
             id: 5,
@@ -97,7 +96,7 @@ const ResumeData = {
                 'An upcoming startup which provides medical analysis and other related services to hospitals and doctors',
             website: '',
             description:
-                'Created main website to show during pitch to investors with React frontend and node.js backend as well as helped with general design as well as UI & UX for the website',
+                'Created main website to show during pitch to investors with React frontend and NodeJS backend as well as helped with general design as well as UI & UX for the website',
         },
         {
             id: 6,

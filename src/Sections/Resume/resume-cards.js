@@ -50,9 +50,19 @@ export const ExperienceCard = ({ experienceData }) => {
             <Flex className="Resume-Card-Education-Institution">
                 Achievements:
             </Flex>
-            <Flex className="Resume-Card-Education-Description">
-                {description}
-            </Flex>
+            {description
+                .split('.')
+                .filter((descriptionDivide) => descriptionDivide.trim() !== '')
+                .map((descriptionDivide, index) => {
+                    return (
+                        <Flex
+                            key={index} // Add a unique key
+                            className="Resume-Card-Education-Description"
+                        >
+                            {`${descriptionDivide}.`}
+                        </Flex>
+                    )
+                })}
         </Flex>
     )
 }

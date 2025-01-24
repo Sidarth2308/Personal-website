@@ -104,9 +104,9 @@ export default function About() {
                             <a
                                 className="About-RightColumn-Projects-Download"
                                 download
-                                href="https://drive.usercontent.google.com/download?id=1CSYoFaVGsPpu7ArVBzyHnncQhR-cPRnS&export=download"
+                                href="https://drive.google.com/file/d/1i5rKsEnqsND0vn7h7hqaLVnKVv7z0PwV/view?usp=sharing"
                             >
-                                Download CV
+                                View Resume
                             </a>
                         </Flex>
                     </Flex>

@@ -17,7 +17,7 @@ const ProjectsCard = ({ projectData }) => {
             <Flex className="Projects-Card-Image" bgImage={thumbnail}></Flex>
             <Flex align="center" justifyContent="space-around" w="100%">
                 <Flex className="Projects-Card-Title">{title}</Flex>
-                <Flex className="Projects-Card-Button">Learn More</Flex>
+                {/* <Flex className="Projects-Card-Button">Learn More</Flex> */}
             </Flex>
         </Flex>
     )
