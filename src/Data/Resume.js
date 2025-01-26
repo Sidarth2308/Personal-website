@@ -41,8 +41,8 @@ const ResumeData = {
     Experience: [
         {
             id: 1,
-            monthStart: 'February, 2023',
-            monthEnd: 'July, 2023',
+            monthStart: 'August, 2023',
+            monthEnd: 'Present',
             role: 'Software Engineer',
             company: 'Fidelity Investments',
             oneLiner:
